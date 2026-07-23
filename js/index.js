@@ -2856,8 +2856,8 @@ function runPageTransition(linkEl, label, sessionKey, href) {
 }
 
 const PAGE_LINK_ROUTES = {
-  work: { label: "Work", sessionKey: "work-transition", href: "works/" },
-  info: { label: "Info", sessionKey: "info-transition", href: "info/" },
+  work: { label: "Projects", sessionKey: "work-transition", href: "works/" },
+  info: { label: "About", sessionKey: "info-transition", href: "info/" },
   contact: {
     label: "Contact",
     sessionKey: "contact-transition",
