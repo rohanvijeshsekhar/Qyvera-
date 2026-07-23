@@ -2259,10 +2259,9 @@ function setupProjectsSection() {
       year: "2026",
       tags: ["React", "NextJS", "Python", "FastAPI"],
       images: [
-        "assets/images/projects/CyberDiagWebsite/healthcare_detail_generated.png",
-        "assets/images/projects/CyberDiagWebsite/qyvera_healthcare_detail1.svg",
-        "assets/images/projects/Anima/qyvera_analytics_detail1.svg",
-        "assets/images/projects/cyberdiag/qyvera_crm_detail1.svg",
+        "assets/images/projects/CyberDiagWebsite/image1.png",
+        "assets/images/projects/CyberDiagWebsite/image2.png",
+        "assets/images/projects/CyberDiagWebsite/image3.png",
       ],
     },
     anima: {
