@@ -457,10 +457,14 @@ master.add(() => {
   } else {
     document.documentElement.style.overflow = "";
   }
-  _forceScrollTop();
-  requestAnimationFrame(_forceScrollTop);
-  lenis.start();
-  lenis.scrollTo(0, { immediate: true });
+  if (!shouldSkipLongIntro) {
+    _forceScrollTop();
+    requestAnimationFrame(_forceScrollTop);
+    lenis.start();
+    lenis.scrollTo(0, { immediate: true });
+  } else {
+    lenis.start();
+  }
 
   allRevealEls.forEach((ch) => {
     ch.style.willChange = "auto";
@@ -485,7 +489,22 @@ master.add(() => {
   requestAnimationFrame(() => {
     if (revealSetupStarted) return;
     revealSetupStarted = true;
-    setupScrollReveal().catch((err) => {
+    setupScrollReveal().then(() => {
+      if (shouldSkipLongIntro) {
+        const savedY = sessionStorage.getItem("index-scroll-y");
+        if (savedY !== null) {
+          const y = parseInt(savedY, 10);
+          lenis.scrollTo(y, { immediate: true });
+          window.scrollTo(0, y);
+          document.documentElement.scrollTop = y;
+          document.body.scrollTop = y;
+          sessionStorage.removeItem("index-scroll-y");
+        }
+        setTimeout(() => {
+          ScrollTrigger.refresh();
+        }, 50);
+      }
+    }).catch((err) => {
       console.error("setupScrollReveal failed:", err);
     });
   });
@@ -2829,6 +2848,9 @@ function runPageTransition(linkEl, label, sessionKey, href) {
 
   tl.add(() => {
     sessionStorage.setItem(sessionKey, "1");
+    try {
+      sessionStorage.setItem("index-scroll-y", window.scrollY || document.documentElement.scrollTop || 0);
+    } catch (e) {}
     window.location.href = href;
   }, 1.3);
 }
