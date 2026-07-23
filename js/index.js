@@ -2382,6 +2382,10 @@ function setupProjectsSection() {
 
   function updateActiveThumb() {
     if (!projectOpen) return;
+    if (window.innerWidth <= 768) {
+      _galleryRAF = requestAnimationFrame(updateActiveThumb);
+      return;
+    }
     if (!_thumbImgs.length) {
       _galleryRAF = requestAnimationFrame(updateActiveThumb);
       return;
@@ -2489,12 +2493,22 @@ function setupProjectsSection() {
     gsap.set(detailThumbsInner, { y: 0 });
 
     var remPx = parseFloat(getComputedStyle(document.documentElement).fontSize);
-    var targetTop = window.innerHeight * 0.22;
-    var targetLeft = remPx * 4;
-    var targetFontSize = Math.min(
-      Math.max(window.innerWidth * 0.05, remPx * 3),
-      remPx * 5,
-    );
+    var targetTop, targetLeft, targetFontSize;
+    if (window.innerWidth <= 768) {
+      targetTop = remPx * 6; // Padding top (6rem)
+      targetLeft = remPx * 1.5; // Padding left (1.5rem)
+      targetFontSize = Math.min(
+        Math.max(window.innerWidth * 0.08, remPx * 2.2),
+        remPx * 3.2
+      );
+    } else {
+      targetTop = window.innerHeight * 0.22;
+      targetLeft = remPx * 4;
+      targetFontSize = Math.min(
+        Math.max(window.innerWidth * 0.05, remPx * 3),
+        remPx * 5
+      );
+    }
 
     var tl = gsap.timeline();
 
@@ -2651,6 +2665,7 @@ function setupProjectsSection() {
     "wheel",
     function (e) {
       if (!projectOpen) return;
+      if (window.innerWidth <= 768) return; // Allow native scroll on mobile
       e.preventDefault();
       var delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
       _galleryY = Math.max(-_galleryMaxScroll, Math.min(0, _galleryY - delta));
@@ -2672,6 +2687,7 @@ function setupProjectsSection() {
     "touchmove",
     function (e) {
       if (!projectOpen) return;
+      if (window.innerWidth <= 768) return; // Allow native scroll on mobile
       e.preventDefault();
       var y = e.touches[0].clientY;
       var delta = _detailTouchStartY - y;
