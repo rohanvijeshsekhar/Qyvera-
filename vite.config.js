@@ -7,7 +7,7 @@ function copyStaticFolders() {
   return {
     name: 'copy-static-folders',
     closeBundle() {
-      const folders = ['js', 'styles']
+      const folders = ['js', 'styles', 'assets']
       for (const folder of folders) {
         const src = resolve(__dirname, folder)
         const dest = resolve(__dirname, 'dist', folder)
