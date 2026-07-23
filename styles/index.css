@@ -655,7 +655,7 @@ a.chr-hover {
 
 .proj-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: auto;
   display: block;
   object-fit: cover;
   cursor: none;
