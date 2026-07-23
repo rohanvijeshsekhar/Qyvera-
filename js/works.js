@@ -19,7 +19,7 @@ var PROJECTS = [
     category: isEn ? 'Analytics' : 'Analytique',
     year: '2026',
     tags: ['NextJS', 'Tailwind', 'ChartJS', 'PostgreSQL'],
-    cover: 'assets/images/projects/Covers/Anima.avif'
+    cover: 'assets/images/projects/Covers/Anima.png'
   },
   {
     id: 'cyberdiag-app',
@@ -28,7 +28,7 @@ var PROJECTS = [
     category: isEn ? 'SaaS Product' : 'Produit SaaS',
     year: '2026',
     tags: ['TypeScript', 'Express', 'MongoDB', 'React'],
-    cover: 'assets/images/projects/Covers/CyberDiag.avif'
+    cover: 'assets/images/projects/Covers/CyberDiag.png'
   },
   {
     id: 'zenith',
@@ -37,7 +37,7 @@ var PROJECTS = [
     category: isEn ? 'E-Commerce' : 'E-Commerce',
     year: '2025',
     tags: ['NodeJS', 'React', 'Stripe', 'Tailwind'],
-    cover: 'assets/images/projects/Covers/Zenith.avif'
+    cover: 'assets/images/projects/Covers/Zenith.png'
   },
   {
     id: 'portfolio',
@@ -46,7 +46,7 @@ var PROJECTS = [
     category: isEn ? 'Enterprise' : 'Entreprise',
     year: '2026',
     tags: ['NextJS', 'Firebase', 'Tailwind'],
-    cover: 'assets/images/projects/Covers/Portfolio.avif'
+    cover: 'assets/images/projects/Covers/Portfolio.png'
   },
   {
     id: 'skymcdb',
@@ -55,7 +55,7 @@ var PROJECTS = [
     category: isEn ? 'Enterprise' : 'Entreprise',
     year: '2025',
     tags: ['Java', 'Spring Boot', 'MySQL', 'Docker'],
-    cover: 'assets/images/projects/Covers/SkymcDB.avif'
+    cover: 'assets/images/projects/Covers/SkymcDB.png'
   },
   {
     id: 'chromablock',
@@ -64,7 +64,7 @@ var PROJECTS = [
     category: isEn ? 'Web Application' : 'Application Web',
     year: '2025',
     tags: ['NextJS', 'Firebase', 'Tailwind'],
-    cover: 'assets/images/projects/Covers/ChromaBlock.avif'
+    cover: 'assets/images/projects/Covers/ChromaBlock.png'
   },
   {
     id: 'symphony',
@@ -73,7 +73,7 @@ var PROJECTS = [
     category: isEn ? 'DevOps' : 'DevOps',
     year: '2026',
     tags: ['Docker', 'AWS', 'NodeJS', 'Terraform'],
-    cover: 'assets/images/projects/Covers/Symphony.avif'
+    cover: 'assets/images/projects/Covers/Symphony.png'
   },
   {
     id: 'echo',
@@ -82,7 +82,7 @@ var PROJECTS = [
     category: isEn ? 'Enterprise' : 'Entreprise',
     year: '2026',
     tags: ['NextJS', 'PostgreSQL', 'Express', 'Redis'],
-    cover: 'assets/images/projects/Covers/Echo.avif'
+    cover: 'assets/images/projects/Covers/Echo.png'
   }
 ];
 

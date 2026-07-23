@@ -2262,6 +2262,7 @@ function setupProjectsSection() {
         "assets/images/projects/CyberDiagWebsite/image1.png",
         "assets/images/projects/CyberDiagWebsite/image2.png",
         "assets/images/projects/CyberDiagWebsite/image3.png",
+        "assets/images/projects/CyberDiagWebsite/image4.png",
       ],
     },
     anima: {
