@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap');
+      .font-sans { font-family: 'Inter', -apple-system, sans-serif; }
+      .text-title { font-weight: 800; fill: #f4f4f5; font-size: 26px; letter-spacing: -0.04em; line-height: 1.1; }
+      .text-subhead { font-weight: 400; fill: #71717a; font-size: 13px; line-height: 1.5; }
+      .text-heading { font-weight: 600; fill: #f4f4f5; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+      .text-logo { font-weight: 700; fill: #f4f4f5; font-size: 15px; letter-spacing: -0.02em; }
+      .text-nav { font-weight: 500; fill: #71717a; font-size: 11px; }
+      .text-btn { font-weight: 600; font-size: 11px; text-anchor: middle; }
+    </style>
+    <!-- Gradients -->
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#09090b" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background Grid -->
+  <rect width="800" height="600" fill="#09090b" rx="12" />
+  <circle cx="500" cy="350" r="350" fill="url(#glow)" />
+  <g stroke="#18181b" stroke-width="0.75" opacity="0.3">
+    <line x1="100" y1="0" x2="100" y2="600" />
+    <line x1="200" y1="0" x2="200" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="400" y1="0" x2="400" y2="600" />
+    <line x1="500" y1="0" x2="500" y2="600" />
+    <line x1="600" y1="0" x2="600" y2="600" />
+    <line x1="700" y1="0" x2="700" y2="600" />
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="0" y1="500" x2="800" y2="500" />
+  </g>
+
+  <!-- Navigation Bar -->
+  <rect x="24" y="16" width="752" height="40" rx="8" fill="#18181b" stroke="#27272a" stroke-width="1" />
+  <circle cx="44" cy="36" r="6" fill="#10b981" />
+  <circle cx="44" cy="36" r="3" fill="#09090b" />
+  <text x="56" y="41" class="font-sans text-logo">Qyvera</text>
+
+  <g transform="translate(160, 40)" class="font-sans text-nav">
+    <text x="0" y="0">Products</text>
+    <text x="70" y="0">Features</text>
+    <text x="140" y="0">Developers</text>
+    <text x="220" y="0">Pricing</text>
+  </g>
+
+  <!-- Start Free Trial Button -->
+  <rect x="680" y="24" width="84" height="24" rx="4" fill="#10b981" />
+  <text x="722" y="40" class="font-sans text-btn" fill="#09090b">Provision App</text>
+
+  <!-- Hero Section Content -->
+  <g transform="translate(48, 100)">
+    <!-- Category Badge -->
+    <rect width="120" height="20" rx="10" fill="#27272a" />
+    <circle cx="10" cy="10" r="3" fill="#6366f1" />
+    <text x="20" y="14" class="font-sans text-heading" fill="#6366f1" font-size="9">DevOps Infrastructure</text>
+
+    <!-- Main Title -->
+    <text x="0" y="55" class="font-sans text-title">Continuous Cloud
+Deployments Platform.</text>
+
+    <!-- Subheading -->
+    <text x="0" y="90" class="font-sans text-subhead">Monitor cluster environments, deploy Kubernetes payloads,
+and track network logs across global regions.</text>
+
+    <!-- Action Buttons -->
+    <g transform="translate(0, 145)">
+      <!-- CTA 1 -->
+      <rect width="110" height="32" rx="6" fill="#10b981" />
+      <text x="55" y="20" class="font-sans text-btn" fill="#09090b">Provision App</text>
+
+      <!-- CTA 2 -->
+      <rect x="124" width="110" height="32" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1" />
+      <text x="179" y="20" class="font-sans text-btn" fill="#f4f4f5">View Docs</text>
+    </g>
+  </g>
+
+  <!-- Embedded Product Mockup Frame (Slight Angled/Modern Presentation) -->
+  <g transform="translate(48, 310)">
+    <!-- Browser Mockup Window -->
+    <rect width="704" height="258" rx="8" fill="#18181b" stroke="#27272a" stroke-width="1" />
+    <!-- Browser Window Header -->
+    <rect width="704" height="24" rx="8" fill="#09090b" />
+    <circle cx="12" cy="12" r="3.5" fill="#ef4444" />
+    <circle cx="22" cy="12" r="3.5" fill="#f59e0b" />
+    <circle cx="32" cy="12" r="3.5" fill="#10b981" />
+    <rect x="64" y="6" width="400" height="12" rx="4" fill="#18181b" />
+    <text x="72" y="15" class="font-sans text-muted" font-size="8">https://app.qyvera.com/cloud</text>
+
+    <!-- Embedded Dashboard Content -->
+    <g transform="translate(16, 40)">
+      
+    <!-- Server instance metrics -->
+    <g transform="translate(0, 0)">
+    <rect width="160" height="60" fill="#09090b" rx="6" stroke="#27272a" stroke-width="1" />
+    <text x="12" y="18" class="font-sans text-muted" font-size="8" fill="#71717a">Compute Allocation</text>
+    <text x="12" y="38" class="font-sans text-metric" font-size="14" fill="#f4f4f5">142 Server Nodes</text>
+    <text x="12" y="52" class="font-sans" font-size="8" fill="#10b981">All status markers active</text>
+    <rect x="142" y="10" width="6" height="6" rx="3" fill="#10b981" />
+  </g>
+    <g transform="translate(170, 0)">
+    <rect width="160" height="60" fill="#09090b" rx="6" stroke="#27272a" stroke-width="1" />
+    <text x="12" y="18" class="font-sans text-muted" font-size="8" fill="#71717a">Average CPU Load</text>
+    <text x="12" y="38" class="font-sans text-metric" font-size="14" fill="#f4f4f5">24.2% Load</text>
+    <text x="12" y="52" class="font-sans" font-size="8" fill="#10b981">Headroom at optimal level</text>
+    <rect x="142" y="10" width="6" height="6" rx="3" fill="#6366f1" />
+  </g>
+    <g transform="translate(0, 70)">
+    <rect width="330" height="130" fill="#09090b" rx="6" stroke="#27272a" stroke-width="1" />
+    <path d="M 10 110 Q 70 80 120 70 T 220 50 T 320 30" fill="none" stroke="#10b981" stroke-width="1.5" />
+    <line x1="8" y1="122" x2="322" y2="122" stroke="#27272a" stroke-width="0.5" />
+  </g>
+    <g transform="translate(340, 0)">
+    <rect width="330" height="200" fill="#09090b" rx="6" stroke="#27272a" stroke-width="1" />
+    <text x="8" y="14" class="font-sans text-heading" font-size="8" fill="#f4f4f5">Cluster Regions Node Status</text>
+    <text x="8" y="28" class="font-sans" font-size="8" fill="#f4f4f5">PROD-AWS-NODE-01</text>
+    <text x="90" y="28" class="font-sans" font-size="8" fill="#71717a">us-east-1.aws</text>
+    <text x="140" y="28" class="font-sans" font-size="8" fill="#10b981">32.4% CPU</text><text x="8" y="44" class="font-sans" font-size="8" fill="#f4f4f5">PROD-GCP-NODE-02</text>
+    <text x="90" y="44" class="font-sans" font-size="8" fill="#71717a">europe-west3.gcp</text>
+    <text x="140" y="44" class="font-sans" font-size="8" fill="#10b981">18.9% CPU</text><text x="8" y="60" class="font-sans" font-size="8" fill="#f4f4f5">PROD-DO-NODE-03</text>
+    <text x="90" y="60" class="font-sans" font-size="8" fill="#71717a">nyc1.digitalocean</text>
+    <text x="140" y="60" class="font-sans" font-size="8" fill="#10b981">24.8% CPU</text><text x="8" y="76" class="font-sans" font-size="8" fill="#f4f4f5">PROD-AWS-NODE-04</text>
+    <text x="90" y="76" class="font-sans" font-size="8" fill="#71717a">us-west-2.aws</text>
+    <text x="140" y="76" class="font-sans" font-size="8" fill="#10b981">12.4% CPU</text>
+  </g>
+  
+    </g>
+  </g>
+
+  <!-- Floating UI Cards / Badges -->
+  <g transform="translate(430, 95)">
+    
+    <g transform="translate(0, 0)">
+    <rect width="260" height="70" fill="#18181b" rx="8" stroke="#27272a" stroke-width="1.5" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.5))" />
+    <circle cx="20" cy="20" r="6" fill="#10b981" />
+    <text x="32" y="24" class="font-sans text-heading" font-size="9" fill="#f4f4f5">DEPLOYMENT VELOCITY</text>
+    
+      <text x="16" y="44" class="font-sans" font-size="10" fill="#71717a">Pipeline: API Gateway deploy</text>
+      <text x="16" y="58" class="font-sans" font-size="10" fill="#10b981">✓ Zero code rollbacks required</text>
+    
+  </g>
+    <g transform="translate(40, 90)">
+    <rect width="220" height="60" fill="#18181b" rx="8" stroke="#27272a" stroke-width="1.5" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.5))" />
+    <circle cx="20" cy="20" r="6" fill="#6366f1" />
+    <text x="32" y="24" class="font-sans text-heading" font-size="9" fill="#f4f4f5">SERVER SYSTEM METRIC</text>
+    
+      <text x="16" y="42" class="font-sans text-metric" font-size="14" fill="#f4f4f5">14.2ms Network Latency</text>
+    
+  </g>
+  
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="info.title">
+
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Qyvera Technologies</title>
+  <meta name="description" content="À propos de Qyvera Technologies.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qyvera.com/info">
+  <meta property="og:title" content="About — Qyvera Technologies">
+  <meta property="og:description" content="À propos de Qyvera Technologies.">
+  <meta property="og:image" content="assets/images/cover/cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="assets/images/cover/cover.jpg">
+  <meta name="author" content="Qyvera Technologies">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="canonical" href="https://qyvera.com/info">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="preload" href="assets/fonts/Breton.woff2" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/Machine.otf" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/images/profile/me.png" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles/info.css">
+</head>
+
+<body>
+
+  <div class="info-canvas" id="info-canvas"></div>
+  <div class="info-vignette"></div>
+
+  <div class="intro-overlay" id="intro-overlay"></div>
+
+  <div class="page-title" id="page-title">About</div>
+
+  <a class="back-btn" id="back-btn" href="index.html" aria-label="Retour à l'accueil">
+    <span class="chr-hover" data-chr="Back"></span>
+  </a>
+
+  <main class="info-main" id="info-main">
+
+    <section class="info-left">
+      <div class="info-photo-wrap">
+        <img class="info-photo" src="assets/images/profile/me.png" alt="Luke Baffait" decoding="async">
+        <span class="frame-corner tl"></span>
+        <span class="frame-corner tr"></span>
+        <span class="frame-corner bl"></span>
+        <span class="frame-corner br"></span>
+      </div>
+      <div class="info-meta">
+        <span class="info-meta-label" data-i18n="info.meta.based">Basé à</span>
+        <span class="info-meta-value" data-i18n="info.meta.based.value">Vannes, France</span>
+      </div>
+      <div class="info-meta">
+        <span class="info-meta-label" data-i18n="info.meta.status">Fondateurs</span>
+        <span class="info-meta-value" data-i18n="info.meta.status.value">Rohan Sekhar & Pooja Prasad</span>
+      </div>
+    </section>
+
+    <section class="info-right">
+      <div class="info-headline">
+        <span class="info-eyebrow" data-i18n="info.eyebrow">À propos</span>
+        <h1 class="info-name">Qyvera Technologies.</h1>
+        <p class="info-role" data-i18n="info.role">Ingénierie logicielle intelligente et design élégant.</p>
+      </div>
+
+      <p class="info-desc" data-i18n="info.desc">
+        Qyvera Technologies conçoit et développe des produits logiciels évolutifs, des systèmes intelligents et des
+        expériences numériques sur mesure, axés sur la performance et l'innovation.
+      </p>
+
+      <div class="info-skills">
+        <div class="skill-col">
+          <div class="skill-col-title" data-i18n="info.skills.frontend">Logiciels</div>
+          <ul>
+            <li>Logiciels sur mesure</li>
+            <li>Systèmes évolutifs</li>
+            <li>Automatisation métier</li>
+            <li>Performance optimale</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <div class="skill-col-title" data-i18n="info.skills.animation">Applications Web</div>
+          <ul>
+            <li>Plateformes modernes</li>
+            <li>Expériences fluides</li>
+            <li>Design réactif</li>
+            <li>Intégrations API</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <div class="skill-col-title" data-i18n="info.skills.backend">IA & Automatisation</div>
+          <ul>
+            <li>Automatisation intelligente</li>
+            <li>Modèles locaux sécurisés</li>
+            <li>Optimisation de flux</li>
+            <li>IA Générative</li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <div class="skill-col-title" data-i18n="info.skills.security">Design & SaaS</div>
+          <ul>
+            <li>Interfaces épurées</li>
+            <li>Design systems</li>
+            <li>Produits SaaS</li>
+            <li>Architectures cloud</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="info-bottom" id="info-bottom">
+    <a class="info-mail chr-hover" data-chr="contact@qyvera.com" href="mailto:contact@qyvera.com"></a>
+    <span class="info-version"><svg style="width: 1.25em; height: 1.25em; vertical-align: -0.25em;" viewBox="0 0 84 85"
+        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M11 38H54L37 21H51L73 43L51 65H37L54 48H11Z" />
+      </svg>V1.0</span>
+  </div>
+
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/core-renderer.js"></script>
+  <script defer src="js/hero-project.js"></script>
+  <script defer src="js/vendor/gsap.min.js"></script>
+  <script defer src="js/info.js"></script>
+</body>
+
+</html>

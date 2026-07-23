@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="800" height="1200" viewBox="0 0 800 1200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark Background -->
+  <rect width="800" height="1200" fill="#09090b" />
+
+  <!-- Grid mesh layout -->
+  <g stroke="#18181b" stroke-width="1.5">
+    <!-- Horizontal links -->
+    <path d="M 100 200 L 250 400 L 400 300 L 550 500 L 700 350" fill="none" />
+    <path d="M 100 500 L 250 650 L 400 600 L 550 750 L 700 700" fill="none" />
+    <path d="M 100 800 L 250 950 L 400 900 L 550 1100 L 700 1000" fill="none" />
+    
+    <!-- Vertical and diagonal links -->
+    <line x1="250" y1="400" x2="250" y2="650" />
+    <line x1="400" y1="300" x2="400" y2="600" />
+    <line x1="550" y1="500" x2="550" y2="750" />
+    <line x1="250" y1="650" x2="400" y2="900" />
+    <line x1="400" y1="600" x2="550" y2="900" />
+  </g>
+
+  <!-- Glowing Red Neurons / Nodes -->
+  <g fill="#09090b" stroke="#ff1e00" stroke-width="2">
+    <circle cx="100" cy="200" r="8" />
+    <circle cx="250" cy="400" r="8" />
+    <circle cx="400" cy="300" r="8" />
+    <circle cx="550" cy="500" r="8" />
+    <circle cx="700" cy="350" r="8" />
+    <circle cx="100" cy="500" r="8" />
+    <circle cx="250" cy="650" r="8" />
+    <circle cx="400" cy="600" r="8" />
+    <circle cx="550" cy="750" r="8" />
+    <circle cx="700" cy="700" r="8" />
+    <circle cx="100" cy="800" r="8" />
+    <circle cx="250" cy="950" r="8" />
+    <circle cx="400" cy="900" r="8" />
+    <circle cx="550" cy="1100" r="8" />
+    <circle cx="700" cy="1000" r="8" />
+  </g>
+
+  <!-- Glow inner circles -->
+  <g fill="#ff1e00">
+    <circle cx="100" cy="200" r="3" />
+    <circle cx="250" cy="400" r="3" />
+    <circle cx="400" cy="300" r="3" />
+    <circle cx="550" cy="500" r="3" />
+    <circle cx="700" cy="350" r="3" />
+    <circle cx="100" cy="500" r="3" />
+    <circle cx="250" cy="650" r="3" />
+    <circle cx="400" cy="600" r="3" />
+    <circle cx="550" cy="750" r="3" />
+    <circle cx="700" cy="700" r="3" />
+    <circle cx="100" cy="800" r="3" />
+    <circle cx="250" cy="950" r="3" />
+    <circle cx="400" cy="900" r="3" />
+    <circle cx="550" cy="1100" r="3" />
+    <circle cx="700" cy="1000" r="3" />
+  </g>
+
+  <!-- Connection line values -->
+  <g font-family="monospace" font-size="8" fill="#71717a" text-anchor="middle">
+    <text x="175" y="290">W: 0.84</text>
+    <text x="325" y="360">W: 0.92</text>
+    <text x="475" y="415">W: 0.74</text>
+    <text x="175" y="590">W: 0.65</text>
+    <text x="325" y="640">W: 0.89</text>
+    <text x="475" y="815">W: 0.98</text>
+  </g>
+</svg>

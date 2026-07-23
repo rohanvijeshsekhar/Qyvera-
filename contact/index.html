@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr" data-i18n-title="contact.title">
+
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Qyvera Technologies</title>
+  <meta name="description" content="Contactez Qyvera Technologies pour vos projets logiciels et solutions digitales.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://qyvera.com/contact">
+  <meta property="og:title" content="Contact — Qyvera Technologies">
+  <meta property="og:description"
+    content="Contactez Qyvera Technologies pour vos projets logiciels et solutions digitales.">
+  <meta property="og:image" content="assets/images/cover/cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="assets/images/cover/cover.jpg">
+  <meta name="author" content="Qyvera Technologies">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+  <link rel="canonical" href="https://qyvera.com/contact">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="preload" href="assets/fonts/Breton.woff2" as="font" type="font/otf" crossorigin>
+  <link rel="preload" href="assets/fonts/Machine.otf" as="font" type="font/otf" crossorigin>
+  <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+
+  <div class="info-canvas" id="contact-canvas"></div>
+  <div class="info-vignette"></div>
+
+  <div class="intro-overlay" id="intro-overlay"></div>
+
+  <div class="page-title" id="page-title">Contact</div>
+
+  <a class="back-btn" id="back-btn" href="index.html" aria-label="Retour à l'accueil">
+    <span class="chr-hover" data-chr="Back"></span>
+  </a>
+
+  <main class="info-main contact-main" id="contact-main">
+
+    <section class="info-left contact-left">
+      <div class="contact-panel">
+        <h2 class="contact-panel-title" data-i18n="contact.panel.title">Parlons de votre projet.</h2>
+        <p class="contact-panel-copy" data-i18n="contact.panel.copy">
+          Nous répondons rapidement aux demandes de développement sur mesure, de produits SaaS et de missions
+          technologiques.
+        </p>
+      </div>
+      <div class="info-meta">
+        <span class="info-meta-label" data-i18n="contact.meta.base">Base</span>
+        <span class="info-meta-value" data-i18n="contact.meta.base.value">Vannes, France</span>
+      </div>
+      <div class="info-meta">
+        <span class="info-meta-label" data-i18n="contact.meta.status">Fondateurs</span>
+        <span class="info-meta-value" data-i18n="contact.meta.status.value">Rohan Sekhar & Pooja Prasad</span>
+      </div>
+      <div class="info-meta">
+        <span class="info-meta-label" data-i18n="contact.meta.delay">Delai moyen</span>
+        <span class="info-meta-value" data-i18n="contact.meta.delay.value">24h</span>
+      </div>
+    </section>
+
+    <section class="info-right contact-right">
+      <div class="info-headline">
+        <span class="info-eyebrow" data-i18n="contact.eyebrow">Contact</span>
+        <h1 class="info-name">Let&rsquo;s Build Something Exceptional.</h1>
+        <p class="info-role" data-i18n="contact.role">Ingénierie de plateformes évolutives, automations intelligentes et
+          solutions d'affaires sur mesure.</p>
+      </div>
+
+      <p class="info-desc" data-i18n="contact.desc">
+        Que vous ayez besoin d'une plateforme sur mesure, d'un système d'automatisation ou d'une solution numérique
+        moderne, Qyvera Technologies vous aide à transformer vos idées en produits à fort impact.
+      </p>
+
+      <div class="contact-links">
+        <div class="skill-col">
+          <div class="skill-col-title" data-i18n="contact.shortcuts">Raccourcis</div>
+          <ul>
+            <li><a class="contact-link" href="mailto:contact@qyvera.com" data-i18n="contact.maildirect">Mail direct</a>
+            </li>
+            <li><a class="contact-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a class="contact-link" href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="skill-col">
+          <div class="skill-col-title" data-i18n="contact.brief">Format de brief</div>
+          <ul>
+            <li data-i18n="contact.brief.product">Objectif produit</li>
+            <li data-i18n="contact.brief.deadline">Deadline visee</li>
+            <li data-i18n="contact.brief.stack">Stack technique</li>
+            <li data-i18n="contact.brief.deliverables">Livrables attendus</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="info-bottom" id="contact-bottom">
+    <a class="info-mail chr-hover" data-chr="contact@qyvera.com" href="mailto:contact@qyvera.com"></a>
+    <span class="info-version">EST. 2026</span>
+  </div>
+
+  <script defer src="js/i18n.js"></script>
+  <script defer src="js/core-renderer.js"></script>
+  <script defer src="js/hero-project.js"></script>
+  <script defer src="js/vendor/gsap.min.js"></script>
+  <script defer src="js/contact.js"></script>
+</body>
+
+</html>
