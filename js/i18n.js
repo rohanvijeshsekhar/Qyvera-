@@ -1,6 +1,5 @@
 (function () {
-  const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-  const lang = browserLang.startsWith('fr') ? 'fr' : 'en';
+  const lang = 'en';
   document.documentElement.lang = lang;
   document.documentElement.dataset.lang = lang;
   window.__I18N_LANG = lang;
@@ -12,11 +11,6 @@
     if (ch === '🞣') return '<svg style="width: 0.9em; height: 0.9em; vertical-align: -0.1em; transform: translateY(-0.1em);" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 7.5 16.5 12 22 12C16.5 12 12 16.5 12 22C12 16.5 7.5 12 2 12C7.5 12 12 7.5 12 2Z"/></svg>';
     return ch;
   };
-
-  if (lang === 'fr') {
-    window.__t = function (key) { return null; };
-    return;
-  }
 
   const T = {
     'meta.description': 'Qyvera Technologies creates scalable software products, intelligent systems, and modern digital experiences engineered for growth and performance.',
