@@ -10,7 +10,7 @@ var PROJECTS = [
     category: isEn ? 'AI Platform' : 'Plateforme IA',
     year: '2026',
     tags: ['React', 'NextJS', 'Python', 'FastAPI'],
-    cover: 'assets/images/projects/Covers/cyberDiag_web.avif'
+    cover: 'assets/images/projects/Covers/cyberdiag_healthcare_cover.png'
   },
   {
     id: 'anima',
